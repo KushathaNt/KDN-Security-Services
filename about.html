@@ -1,221 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - KDN Security Services</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
-    <style>
-        /* Additional styles specific to about page */
-        .about-section {
-            padding: 120px 0 60px;
-        }
-        
-        .about-intro {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto 60px;
-        }
-        
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: center;
-            margin-bottom: 60px;
-        }
-        
-        .about-image img {
-            border-radius: 10px;
-            box-shadow: var(--box-shadow);
-        }
-        
-        .vision-mission {
-            background-color: #f5f5f5;
-            padding: 80px 0;
-        }
-        
-        .vision-mission-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-        }
-        
-        .vision-box, .mission-box {
-            background-color: white;
-            padding: 40px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
-            height: 100%;
-        }
-        
-        .vision-box h2, .mission-box h2 {
-            color: var(--primary-color);
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        
-        .core-values {
-            padding: 80px 0;
-        }
-        
-        .values-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-        
-        .value-card {
-            text-align: center;
-            padding: 30px;
-            background-color: #f9f9f9;
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
-            transition: var(--transition);
-        }
-        
-        .value-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .value-icon {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-        }
-        
-        .branches {
-            background-color: #f5f5f5;
-            padding: 80px 0;
-        }
-        
-        .branch-card {
-            background-color: white;
-            padding: 30px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
-            margin-bottom: 20px;
-        }
-        
-        .branch-card h3 {
-            color: var(--primary-color);
-            margin-bottom: 15px;
-        }
-        
-        @media (max-width: 992px) {
-            .about-content, .vision-mission-container {
-                grid-template-columns: 1fr;
-            }
-            
-            .about-image {
-                order: -1;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request a Quote | KDN Security Services</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo-container">
-                <img src="Logo.png" alt="KDN Security Services Logo" class="logo">
-                <div class="company-name">
-                    <h1>KDN Security Services</h1>
-                    <p class="tagline">Your Complete Security Solution</p>
-                </div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="training.html">Training</a></li>
-                    <li><a href="references.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="quotes.html" class="cta-button">Get Quote</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <section class="about-section">
-        <div class="container">
-            <div class="about-intro">
-                <h1>About KDN Security Services</h1>
-                <p>Your trusted security partner in Botswana since 2013</p>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Our Story</h2>
-                    <p>Dikgaka Trade (Pty)Ltd T/A KDN Security Services was founded in 2013 as a Gaborone-based manned guarding Security Company. From humble beginnings with just 2 people, the company has grown exponentially to more than 250 employees today.</p>
-                    <p>Over the years, we have developed and implemented a comprehensive Quality Management System (QMS) to document company policies and procedures, meet client requirements and expectations, and continuously improve our service quality.</p>
-                    <p>With our headquarters in Kopong and branches in Palapye, Mahalapye, and Maun, we are strategically positioned to serve clients across Botswana with prompt and professional security solutions.</p>
-                </div>
-                <div class="about-image">
-                    <img src="Guards.png" alt="KDN Security Guards">
-                </div>
-            </div>
-        </div>
-    </section>
+<header>
+  <nav>
+    <div class="logo">
+      <img src="Images and Videos/Logo.png" alt="KDN Logo" />
+      <span>KDN Security Services</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="training.html">Training</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="quotes.html">Quotes</a></li>
+      <li><a href="references.html">References</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <section class="vision-mission">
-        <div class="container">
-            <div class="vision-mission-container">
-                <div class="vision-box">
-                    <h2>Our Vision</h2>
-                    <p>To become one of the leading security service business establishments in Botswana, through a diverse professional skills set, and clarity of purpose and values.</p>
-                </div>
-                <div class="mission-box">
-                    <h2>Our Mission</h2>
-                    <p>To serve all clients by exceeding minimum acceptable quality standards and by providing the highest quality security services.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<main>
+  <section class="about-us">
+    <h1>About KDN Security Services</h1>
+    <p>KDN Security Services, founded in 2013, is one of Botswana’s most trusted security firms. From humble beginnings with just two employees, we have grown to over 250 strong, providing professional guarding, surveillance, alarm systems, and VIP protection across the country.</p>
 
-    <section class="core-values">
-        <div class="container">
-            <h2 class="section-title">Our Core Values</h2>
-            <div class="values-grid">
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-star"></i>
+    <p>We operate 24/7 with fully equipped branches in Gaborone, Palapye, Mahalapye, and Maun. Our success is built on quality service, integrity, customer satisfaction, and continuous innovation in security technology.</p>
+
+    <p>Our trained personnel, supported by a robust Quality Management System (QMS), deliver tailored security solutions to corporate, governmental, and residential clients.</p>
+  </section>
+
+  <section class="vision-mission">
+    <div class="vision">
+      <h2>Our Vision</h2>
+      <p>To become one of the leading security service providers in Botswana by maintaining professionalism, innovation, and customer focus.</p>
+    </div>
+
+    <div class="mission">
+      <h2>Our Mission</h2>
+      <p>To serve all clients by exceeding quality standards and providing the highest levels of security services, thereby ensuring their peace of mind.</p>
+    </div>
+  </section>
+ <div class="objectives-grid">
+                <!-- Objective 1 -->
+                <div class="objective-card">
+                    <div class="icon-box">
+                        <i class="fas fa-user-shield"></i>
                     </div>
-                    <h3>Quality Services</h3>
-                    <p>We strive for excellence in every service we provide, ensuring the highest standards of security for our clients.</p>
+                    <h3>Training Excellence</h3>
+                    <p>To ensure that all our security guards are given adequate training before deployment for optimal performance.</p>
                 </div>
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-handshake"></i>
+
+                <!-- Objective 2 -->
+                <div class="objective-card">
+                    <div class="icon-box">
+                        <i class="fas fa-map-marked-alt"></i>
                     </div>
-                    <h3>Customer Satisfaction</h3>
-                    <p>Our clients' satisfaction is our top priority, and we work tirelessly to meet and exceed their expectations.</p>
+                    <h3>Comprehensive Surveys</h3>
+                    <p>To conduct a comprehensive survey of Client's location to ensure adequate understanding of customer requirements.</p>
                 </div>
-                <div class="value-card">
-                    <div class="value-icon">
+
+                <!-- Objective 3 -->
+                <div class="objective-card">
+                    <div class="icon-box">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Quality Monitoring</h3>
+                    <p>To ensure consistent provision of Quality Service through monitoring and supervision of operatives.</p>
+                </div>
+
+                <!-- Objective 4 -->
+                <div class="objective-card">
+                    <div class="icon-box">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <h3>Client Feedback</h3>
+                    <p>To ensure constant customer satisfaction monitoring through quarterly feedback from clients appraisal survey.</p>
+                </div>
+
+                <!-- Objective 5 -->
+                <div class="objective-card">
+                    <div class="icon-box">
                         <i class="fas fa-heart"></i>
                     </div>
-                    <h3>Honesty and Loyalty</h3>
-                    <p>We uphold the highest standards of integrity in all our dealings, building trust with our clients and staff.</p>
+                    <h3>Client Retention</h3>
+                    <p>To ensure 100% client retention and loyalty through prompt response to customer complaints within 24 hours.</p>
                 </div>
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-balance-scale"></i>
+
+                <!-- Objective 6 -->
+                <div class="objective-card">
+                    <div class="icon-box">
+                        <i class="fas fa-trophy"></i>
                     </div>
-                    <h3>Transparency and Integrity</h3>
-                    <p>We believe in clear communication and ethical conduct in every aspect of our business.</p>
+                    <h3>Industry Leadership</h3>
+                    <p>To ensure an 'A' rated position in the industry through timely deployment and quality delivery of services.</p>
                 </div>
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3>Reliability and Commitment</h3>
-                    <p>We are dedicated to providing consistent, dependable service that our clients can count on 24/7.</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <h3>Innovation</h3>
-                    <p>We continuously seek new technologies and approaches to enhance our security solutions
+            </div>
+    </main>
+</section>
+
+<section class="core-values">
+  <div class="container">
+      <h2 class="section-title">Our Core Values</h2>
+      <div class="values-grid">
+          <div class="value-card">
+              <div class="value-icon">
+                  <i class="fas fa-star"></i>
+              </div>
+              <h3>Quality Services</h3>
+              <p>We strive for excellence in every service we provide, ensuring the highest standards of security for our clients.</p>
+          </div>
+
+          <div class="value-card">
+              <div class="value-icon">
+                  <i class="fas fa-handshake"></i>
+              </div>
+              <h3>Customer Satisfaction</h3>
+              <p>Our clients' satisfaction is our top priority, and we work tirelessly to meet and exceed their expectations.</p>
+          </div>
+
+          <div class="value-card">
+              <div class="value-icon">
+                  <i class="fas fa-heart"></i>
+              </div>
+              <h3>Honesty and Loyalty</h3>
+              <p>We uphold the highest standards of integrity in all our dealings, building trust with our clients and staff.</p>
+          </div>
+
+          <div class="value-card">
+              <div class="value-icon">
+                  <i class="fas fa-balance-scale"></i>
+              </div>
+              <h3>Transparency and Integrity</h3>
+              <p>We believe in clear communication and ethical conduct in every aspect of our business.</p>
+          </div>
+
+          <div class="value-card">
+              <div class="value-icon">
+                  <i class="fas fa-clock"></i>
+              </div>
+              <h3>Reliability and Commitment</h3>
+              <p>We are dedicated to providing consistent, dependable service that our clients can count on 24/7.</p>
+          </div>
+
+          <div class="value-card">
+              <div class="value-icon">
+                  <i class="fas fa-lightbulb"></i>
+              </div>
+              <h3>Innovation</h3>
+              <p>We continuously seek new technologies and approaches to enhance our security solutions.</p>
+          </div>
+      </div>
+  </div>
+</section>
