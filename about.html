@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us | KDN Security Services</title>
-  <link rel="stylesheet" href="styles.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <style>
@@ -13,25 +12,14 @@
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       padding: 20px;
-      margin-bottom: 30px;
       height: 100%;
+      word-wrap: break-word;
     }
 
     .icon-box i {
       font-size: 2.5rem;
       color: #800000;
       margin-bottom: 15px;
-    }
-
-    .card-custom h3 {
-      font-size: 1.25rem;
-      margin-bottom: 10px;
-      word-wrap: break-word;
-    }
-
-    .card-custom p {
-      font-size: 0.95rem;
-      word-wrap: break-word;
     }
 
     .section-title {
@@ -41,66 +29,52 @@
       color: #800000;
     }
 
-    .logo img {
-      height: 40px;
-      margin-right: 10px;
-    }
-
-    nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    .navbar {
       background-color: #800000;
-      padding: 10px 20px;
     }
 
-    .logo span {
-      font-size: 1.5rem;
-      font-weight: bold;
+    .navbar-brand, .navbar-nav .nav-link {
       color: #fff;
     }
 
-    .nav-links {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin: 0;
-      padding: 0;
-    }
-
-    .nav-links li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .nav-links li a.active,
-    .nav-links li a:hover {
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
       text-decoration: underline;
+      color: #f8f9fa;
+    }
+
+    footer {
+      background-color: #800000;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <nav>
-    <div class="logo d-flex align-items-center">
-      <img src="Images and Videos/Logo.png" alt="KDN Logo" />
-      <span>KDN Security Services</span>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="Images and Videos/Logo.png" alt="KDN Logo" height="40" class="me-2" />
+      KDN Security Services
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+        <li class="nav-item"><a class="nav-link" href="quotes.html">Quotes</a></li>
+        <li class="nav-item"><a class="nav-link" href="references.html">References</a></li>
+      </ul>
     </div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="training.html">Training</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-      <li><a href="feedback.html">Feedback</a></li>
-      <li><a href="quotes.html">Quotes</a></li>
-      <li><a href="references.html">References</a></li>
-    </ul>
-  </nav>
-</header>
+  </div>
+</nav>
 
 <main class="container my-5">
   <section class="text-center mb-5">
@@ -121,50 +95,44 @@
     </div>
   </section>
 
-  <!-- Objectives -->
   <h2 class="section-title">Objectives</h2>
-  <section class="row">
-    <div class="col-md-4 col-sm-6">
+  <section class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+    <div class="col">
       <div class="card-custom text-center">
         <div class="icon-box"><i class="fas fa-user-shield"></i></div>
         <h3>Training Excellence</h3>
         <p>Ensure security guards are fully trained before deployment for optimal performance.</p>
       </div>
     </div>
-
-    <div class="col-md-4 col-sm-6">
+    <div class="col">
       <div class="card-custom text-center">
         <div class="icon-box"><i class="fas fa-map-marked-alt"></i></div>
         <h3>Comprehensive Surveys</h3>
         <p>Conduct client location surveys to understand all security needs.</p>
       </div>
     </div>
-
-    <div class="col-md-4 col-sm-6">
+    <div class="col">
       <div class="card-custom text-center">
         <div class="icon-box"><i class="fas fa-clipboard-check"></i></div>
         <h3>Quality Monitoring</h3>
         <p>Maintain consistent service through monitoring and supervision.</p>
       </div>
     </div>
-
-    <div class="col-md-4 col-sm-6">
+    <div class="col">
       <div class="card-custom text-center">
         <div class="icon-box"><i class="fas fa-comment-dots"></i></div>
         <h3>Client Feedback</h3>
         <p>Gather quarterly client feedback to ensure satisfaction and improvement.</p>
       </div>
     </div>
-
-    <div class="col-md-4 col-sm-6">
+    <div class="col">
       <div class="card-custom text-center">
         <div class="icon-box"><i class="fas fa-heart"></i></div>
         <h3>Client Retention</h3>
         <p>Ensure 100% retention by responding to complaints within 24 hours.</p>
       </div>
     </div>
-
-    <div class="col-md-4 col-sm-6">
+    <div class="col">
       <div class="card-custom text-center">
         <div class="icon-box"><i class="fas fa-trophy"></i></div>
         <h3>Industry Leadership</h3>
@@ -173,50 +141,44 @@
     </div>
   </section>
 
-  <!-- Core Values -->
   <h2 class="section-title">Our Core Values</h2>
-  <section class="row">
-    <div class="col-md-4 col-sm-6">
+  <section class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+    <div class="col">
       <div class="card-custom text-center">
         <div class="icon-box"><i class="fas fa-star"></i></div>
         <h3>Quality Services</h3>
         <p>We provide excellent services and meet the highest standards.</p>
       </div>
     </div>
-
-    <div class="col-md-4 col-sm-6">
+    <div class="col">
       <div class="card-custom text-center">
         <div class="icon-box"><i class="fas fa-handshake"></i></div>
         <h3>Customer Satisfaction</h3>
         <p>Our clients’ happiness is our priority — we always aim to exceed expectations.</p>
       </div>
     </div>
-
-    <div class="col-md-4 col-sm-6">
+    <div class="col">
       <div class="card-custom text-center">
         <div class="icon-box"><i class="fas fa-heart"></i></div>
         <h3>Honesty & Loyalty</h3>
         <p>We uphold integrity and loyalty in all relationships.</p>
       </div>
     </div>
-
-    <div class="col-md-4 col-sm-6">
+    <div class="col">
       <div class="card-custom text-center">
         <div class="icon-box"><i class="fas fa-balance-scale"></i></div>
         <h3>Transparency</h3>
         <p>Clear, ethical conduct guides every part of our operations.</p>
       </div>
     </div>
-
-    <div class="col-md-4 col-sm-6">
+    <div class="col">
       <div class="card-custom text-center">
         <div class="icon-box"><i class="fas fa-clock"></i></div>
         <h3>Reliability</h3>
         <p>We are committed and consistent, always ready to serve 24/7.</p>
       </div>
     </div>
-
-    <div class="col-md-4 col-sm-6">
+    <div class="col">
       <div class="card-custom text-center">
         <div class="icon-box"><i class="fas fa-lightbulb"></i></div>
         <h3>Innovation</h3>
@@ -226,7 +188,7 @@
   </section>
 </main>
 
-<footer class="bg-dark text-white text-center py-3">
+<footer>
   <p class="mb-0">&copy; 2025 KDN Security Services | All Rights Reserved</p>
 </footer>
 
