@@ -2,192 +2,198 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us | KDN Security Services</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Your custom styles -->
   <link rel="stylesheet" href="styles.css" />
-  <!-- Font Awesome for icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="Images and Videos/Logo.png" alt="KDN Logo" />
-        <span>KDN Security Services</span>
+
+<!-- Bootstrap Navbar with KDN styling -->
+<header>
+  <nav class="navbar navbar-expand-lg" style="background-color: #800000;">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white d-flex align-items-center" href="#">
+        <img src="Images and Videos/Logo.png" alt="KDN Logo" width="40" height="40" class="me-2">
+        KDN Security Services
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white active" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="training.html">Training</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="feedback.html">Feedback</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="quotes.html">Quotes</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="references.html">References</a></li>
+        </ul>
       </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="training.html">Training</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="feedback.html">Feedback</a></li>
-        <li><a href="quotes.html">Quotes</a></li>
-        <li><a href="references.html">References</a></li>
-      </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
 
-  <main class="container my-5">
-    <section class="about-us mb-5">
-      <h1>About KDN Security Services</h1>
-      <p>KDN Security Services, founded in 2013, is one of Botswana’s most trusted security firms. From humble beginnings with just two employees, we have grown to over 250 strong, providing professional guarding, surveillance, alarm systems, and VIP protection across the country.</p>
+<main class="container my-5">
+  <section class="about-us">
+    <h1>About KDN Security Services</h1>
+    <p>KDN Security Services, founded in 2013, is one of Botswana’s most trusted security firms. From humble beginnings with just two employees, we have grown to over 250 strong, providing professional guarding, surveillance, alarm systems, and VIP protection across the country.</p>
 
-      <p>We operate 24/7 with fully equipped branches in Gaborone, Palapye, Mahalapye, and Maun. Our success is built on quality service, integrity, customer satisfaction, and continuous innovation in security technology.</p>
+    <p>We operate 24/7 with fully equipped branches in Gaborone, Palapye, Mahalapye, and Maun. Our success is built on quality service, integrity, customer satisfaction, and continuous innovation in security technology.</p>
 
-      <p>Our trained personnel, supported by a robust Quality Management System (QMS), deliver tailored security solutions to corporate, governmental, and residential clients.</p>
-    </section>
+    <p>Our trained personnel, supported by a robust Quality Management System (QMS), deliver tailored security solutions to corporate, governmental, and residential clients.</p>
+  </section>
 
-    <section class="vision-mission row mb-5">
-      <div class="vision col-md-6">
-        <h2>Our Vision</h2>
-        <p>To become one of the leading security service providers in Botswana by maintaining professionalism, innovation, and customer focus.</p>
-      </div>
-      <div class="mission col-md-6">
-        <h2>Our Mission</h2>
-        <p>To serve all clients by exceeding quality standards and providing the highest levels of security services, thereby ensuring their peace of mind.</p>
-      </div>
-    </section>
+  <section class="vision-mission row my-5">
+    <div class="vision col-md-6">
+      <h2>Our Vision</h2>
+      <p>To become one of the leading security service providers in Botswana by maintaining professionalism, innovation, and customer focus.</p>
+    </div>
 
-    <section class="objectives mb-5">
-      <h2 class="mb-4">Objectives</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100 text-center p-3">
-            <div class="icon-box mb-3 text-primary">
-              <i class="fas fa-user-shield fa-2x"></i>
-            </div>
+    <div class="mission col-md-6">
+      <h2>Our Mission</h2>
+      <p>To serve all clients by exceeding quality standards and providing the highest levels of security services, thereby ensuring their peace of mind.</p>
+    </div>
+  </section>
+
+  <section class="objectives my-5">
+    <h2 class="section-title">Our Objectives</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="fas fa-user-shield fa-2x mb-3"></i>
             <h5 class="card-title">Training Excellence</h5>
             <p class="card-text">To ensure that all our security guards are given adequate training before deployment for optimal performance.</p>
           </div>
         </div>
+      </div>
 
-        <div class="col">
-          <div class="card h-100 text-center p-3">
-            <div class="icon-box mb-3 text-primary">
-              <i class="fas fa-map-marked-alt fa-2x"></i>
-            </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="fas fa-map-marked-alt fa-2x mb-3"></i>
             <h5 class="card-title">Comprehensive Surveys</h5>
             <p class="card-text">To conduct a comprehensive survey of Client's location to ensure adequate understanding of customer requirements.</p>
           </div>
         </div>
+      </div>
 
-        <div class="col">
-          <div class="card h-100 text-center p-3">
-            <div class="icon-box mb-3 text-primary">
-              <i class="fas fa-clipboard-check fa-2x"></i>
-            </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="fas fa-clipboard-check fa-2x mb-3"></i>
             <h5 class="card-title">Quality Monitoring</h5>
             <p class="card-text">To ensure consistent provision of Quality Service through monitoring and supervision of operatives.</p>
           </div>
         </div>
+      </div>
 
-        <div class="col">
-          <div class="card h-100 text-center p-3">
-            <div class="icon-box mb-3 text-primary">
-              <i class="fas fa-comment-dots fa-2x"></i>
-            </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="fas fa-comment-dots fa-2x mb-3"></i>
             <h5 class="card-title">Client Feedback</h5>
             <p class="card-text">To ensure constant customer satisfaction monitoring through quarterly feedback from clients appraisal survey.</p>
           </div>
         </div>
+      </div>
 
-        <div class="col">
-          <div class="card h-100 text-center p-3">
-            <div class="icon-box mb-3 text-primary">
-              <i class="fas fa-heart fa-2x"></i>
-            </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="fas fa-heart fa-2x mb-3"></i>
             <h5 class="card-title">Client Retention</h5>
             <p class="card-text">To ensure 100% client retention and loyalty through prompt response to customer complaints within 24 hours.</p>
           </div>
         </div>
+      </div>
 
-        <div class="col">
-          <div class="card h-100 text-center p-3">
-            <div class="icon-box mb-3 text-primary">
-              <i class="fas fa-trophy fa-2x"></i>
-            </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="fas fa-trophy fa-2x mb-3"></i>
             <h5 class="card-title">Industry Leadership</h5>
             <p class="card-text">To ensure an 'A' rated position in the industry through timely deployment and quality delivery of services.</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="core-values">
-      <h2 class="mb-4">Our Core Values</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100 text-center p-3">
-            <div class="value-icon mb-3 text-warning">
-              <i class="fas fa-star fa-2x"></i>
-            </div>
+  <section class="core-values my-5">
+    <h2 class="section-title">Our Core Values</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="fas fa-star fa-2x mb-3"></i>
             <h5 class="card-title">Quality Services</h5>
             <p class="card-text">We strive for excellence in every service we provide, ensuring the highest standards of security for our clients.</p>
           </div>
         </div>
+      </div>
 
-        <div class="col">
-          <div class="card h-100 text-center p-3">
-            <div class="value-icon mb-3 text-success">
-              <i class="fas fa-handshake fa-2x"></i>
-            </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="fas fa-handshake fa-2x mb-3"></i>
             <h5 class="card-title">Customer Satisfaction</h5>
             <p class="card-text">Our clients' satisfaction is our top priority, and we work tirelessly to meet and exceed their expectations.</p>
           </div>
         </div>
+      </div>
 
-        <div class="col">
-          <div class="card h-100 text-center p-3">
-            <div class="value-icon mb-3 text-danger">
-              <i class="fas fa-heart fa-2x"></i>
-            </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="fas fa-heart fa-2x mb-3"></i>
             <h5 class="card-title">Honesty and Loyalty</h5>
             <p class="card-text">We uphold the highest standards of integrity in all our dealings, building trust with our clients and staff.</p>
           </div>
         </div>
+      </div>
 
-        <div class="col">
-          <div class="card h-100 text-center p-3">
-            <div class="value-icon mb-3 text-info">
-              <i class="fas fa-balance-scale fa-2x"></i>
-            </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="fas fa-balance-scale fa-2x mb-3"></i>
             <h5 class="card-title">Transparency and Integrity</h5>
             <p class="card-text">We believe in clear communication and ethical conduct in every aspect of our business.</p>
           </div>
         </div>
+      </div>
 
-        <div class="col">
-          <div class="card h-100 text-center p-3">
-            <div class="value-icon mb-3 text-secondary">
-              <i class="fas fa-clock fa-2x"></i>
-            </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="fas fa-clock fa-2x mb-3"></i>
             <h5 class="card-title">Reliability and Commitment</h5>
             <p class="card-text">We are dedicated to providing consistent, dependable service that our clients can count on 24/7.</p>
           </div>
         </div>
+      </div>
 
-        <div class="col">
-          <div class="card h-100 text-center p-3">
-            <div class="value-icon mb-3 text-warning">
-              <i class="fas fa-lightbulb fa-2x"></i>
-            </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="fas fa-lightbulb fa-2x mb-3"></i>
             <h5 class="card-title">Innovation</h5>
             <p class="card-text">We continuously seek new technologies and approaches to enhance our security solutions.</p>
           </div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+</main>
 
-  <footer class="text-center py-3 bg-light">
-    <p>&copy; 2025 KDN Security Services | All Rights Reserved</p>
-  </footer>
+<footer class="text-center py-4" style="background-color: #800000; color: white;">
+  <p>&copy; 2025 KDN Security Services | All Rights Reserved</p>
+</footer>
 
-  <!-- Bootstrap JS bundle (with Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
