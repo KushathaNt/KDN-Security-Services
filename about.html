@@ -6,114 +6,103 @@
   <title>About Us | KDN Security Services</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <!-- Custom CSS -->
+  <!-- FontAwesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <!-- Your custom styles -->
   <link rel="stylesheet" href="styles.css" />
   <style>
-    .navbar-custom {
-      background-color: #800000;
+    /* Custom styles for shadow boxes and padding */
+    .card-shadow {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      padding: 20px;
+      background-color: #fff;
+      height: 100%;
     }
-    .navbar-custom .nav-link,
-    .navbar-custom .navbar-brand {
-      color: white !important;
-    }
-    .icon-box i, .value-icon i {
-      font-size: 2rem;
+    .icon-box, .value-icon {
+      font-size: 40px;
       color: #800000;
     }
   </style>
 </head>
 <body>
 
-<!-- NAVIGATION -->
-<nav class="navbar navbar-expand-lg navbar-custom">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">
-      <img src="Images and Videos/Logo.png" alt="KDN Logo" style="height: 40px;" class="me-2" />
-      KDN Security Services
-    </a>
-    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon bg-light"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
-        <li class="nav-item"><a class="nav-link" href="quotes.html">Quotes</a></li>
-        <li class="nav-item"><a class="nav-link" href="references.html">References</a></li>
-      </ul>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#800000;">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="Images and Videos/Logo.png" alt="KDN Logo" style="height:40px; margin-right:10px;" />
+        KDN Security Services
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+          <li class="nav-item"><a class="nav-link" href="quotes.html">Quotes</a></li>
+          <li class="nav-item"><a class="nav-link" href="references.html">References</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
 
-<!-- MAIN CONTENT -->
 <main class="container my-5">
-  <section class="mb-5">
-    <h1 class="mb-3">About KDN Security Services</h1>
-    <p>KDN Security Services, founded in 2013, is one of Botswana’s most trusted security firms. From humble beginnings with just two employees, we have grown to over 250 strong, providing professional guarding, surveillance, alarm systems, and VIP protection across the country.</p>
-    <p>We operate 24/7 with fully equipped branches in Gaborone, Palapye, Mahalapye, and Maun. Our success is built on quality service, integrity, customer satisfaction, and continuous innovation in security technology.</p>
-    <p>Our trained personnel, supported by a robust Quality Management System (QMS), deliver tailored security solutions to corporate, governmental, and residential clients.</p>
-  </section>
 
-  <!-- Vision & Mission -->
-  <section class="row mb-5">
-    <div class="col-md-6">
-      <h2>Our Vision</h2>
-      <p>To become one of the leading security service providers in Botswana by maintaining professionalism, innovation, and customer focus.</p>
-    </div>
-    <div class="col-md-6">
-      <h2>Our Mission</h2>
-      <p>To serve all clients by exceeding quality standards and providing the highest levels of security services, thereby ensuring their peace of mind.</p>
-    </div>
+  <section class="mb-5 text-center">
+    <h1>About KDN Security Services</h1>
+    <p>We provide top-notch security solutions with professionalism, integrity, and innovation.</p>
   </section>
 
   <!-- Objectives -->
   <section class="mb-5">
-    <h2 class="mb-4">Our Objectives</h2>
+    <h2 class="mb-4 text-center">Objectives</h2>
     <div class="row g-4">
-      <div class="col-md-4">
-        <div class="text-center">
-          <div class="icon-box mb-2"><i class="fas fa-user-shield"></i></div>
+      <div class="col-4">
+        <div class="card-shadow text-center h-100">
+          <div class="icon-box mb-3"><i class="fas fa-user-shield"></i></div>
           <h5>Training Excellence</h5>
           <p>To ensure that all our security guards are given adequate training before deployment for optimal performance.</p>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="text-center">
-          <div class="icon-box mb-2"><i class="fas fa-map-marked-alt"></i></div>
+      <div class="col-4">
+        <div class="card-shadow text-center h-100">
+          <div class="icon-box mb-3"><i class="fas fa-map-marked-alt"></i></div>
           <h5>Comprehensive Surveys</h5>
           <p>To conduct a comprehensive survey of Client's location to ensure adequate understanding of customer requirements.</p>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="text-center">
-          <div class="icon-box mb-2"><i class="fas fa-clipboard-check"></i></div>
+      <div class="col-4">
+        <div class="card-shadow text-center h-100">
+          <div class="icon-box mb-3"><i class="fas fa-clipboard-check"></i></div>
           <h5>Quality Monitoring</h5>
           <p>To ensure consistent provision of Quality Service through monitoring and supervision of operatives.</p>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="text-center">
-          <div class="icon-box mb-2"><i class="fas fa-comment-dots"></i></div>
+      <div class="col-4">
+        <div class="card-shadow text-center h-100">
+          <div class="icon-box mb-3"><i class="fas fa-comment-dots"></i></div>
           <h5>Client Feedback</h5>
           <p>To ensure constant customer satisfaction monitoring through quarterly feedback from clients appraisal survey.</p>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="text-center">
-          <div class="icon-box mb-2"><i class="fas fa-heart"></i></div>
+      <div class="col-4">
+        <div class="card-shadow text-center h-100">
+          <div class="icon-box mb-3"><i class="fas fa-heart"></i></div>
           <h5>Client Retention</h5>
           <p>To ensure 100% client retention and loyalty through prompt response to customer complaints within 24 hours.</p>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="text-center">
-          <div class="icon-box mb-2"><i class="fas fa-trophy"></i></div>
+      <div class="col-4">
+        <div class="card-shadow text-center h-100">
+          <div class="icon-box mb-3"><i class="fas fa-trophy"></i></div>
           <h5>Industry Leadership</h5>
           <p>To ensure an 'A' rated position in the industry through timely deployment and quality delivery of services.</p>
         </div>
@@ -123,60 +112,60 @@
 
   <!-- Core Values -->
   <section>
-    <h2 class="mb-4">Our Core Values</h2>
+    <h2 class="mb-4 text-center">Core Values</h2>
     <div class="row g-4">
-      <div class="col-md-4">
-        <div class="text-center">
-          <div class="value-icon mb-2"><i class="fas fa-star"></i></div>
+      <div class="col-4">
+        <div class="card-shadow text-center h-100">
+          <div class="value-icon mb-3"><i class="fas fa-star"></i></div>
           <h5>Quality Services</h5>
           <p>We strive for excellence in every service we provide, ensuring the highest standards of security for our clients.</p>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="text-center">
-          <div class="value-icon mb-2"><i class="fas fa-handshake"></i></div>
+      <div class="col-4">
+        <div class="card-shadow text-center h-100">
+          <div class="value-icon mb-3"><i class="fas fa-handshake"></i></div>
           <h5>Customer Satisfaction</h5>
           <p>Our clients' satisfaction is our top priority, and we work tirelessly to meet and exceed their expectations.</p>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="text-center">
-          <div class="value-icon mb-2"><i class="fas fa-heart"></i></div>
+      <div class="col-4">
+        <div class="card-shadow text-center h-100">
+          <div class="value-icon mb-3"><i class="fas fa-heart"></i></div>
           <h5>Honesty and Loyalty</h5>
           <p>We uphold the highest standards of integrity in all our dealings, building trust with our clients and staff.</p>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="text-center">
-          <div class="value-icon mb-2"><i class="fas fa-balance-scale"></i></div>
+      <div class="col-4">
+        <div class="card-shadow text-center h-100">
+          <div class="value-icon mb-3"><i class="fas fa-balance-scale"></i></div>
           <h5>Transparency and Integrity</h5>
           <p>We believe in clear communication and ethical conduct in every aspect of our business.</p>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="text-center">
-          <div class="value-icon mb-2"><i class="fas fa-clock"></i></div>
+      <div class="col-4">
+        <div class="card-shadow text-center h-100">
+          <div class="value-icon mb-3"><i class="fas fa-clock"></i></div>
           <h5>Reliability and Commitment</h5>
           <p>We are dedicated to providing consistent, dependable service that our clients can count on 24/7.</p>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="text-center">
-          <div class="value-icon mb-2"><i class="fas fa-lightbulb"></i></div>
+      <div class="col-4">
+        <div class="card-shadow text-center h-100">
+          <div class="value-icon mb-3"><i class="fas fa-lightbulb"></i></div>
           <h5>Innovation</h5>
           <p>We continuously seek new technologies and approaches to enhance our security solutions.</p>
         </div>
       </div>
     </div>
   </section>
+
 </main>
 
-<!-- FOOTER -->
-<footer class="text-center py-3 bg-light">
+<footer class="text-center py-3" style="background-color:#800000; color:#fff;">
   <p>&copy; 2025 KDN Security Services | All Rights Reserved</p>
 </footer>
 
-<!-- Bootstrap JS Bundle -->
+<!-- Bootstrap JS Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
