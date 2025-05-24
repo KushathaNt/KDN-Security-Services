@@ -1995,3 +1995,19 @@ header {
         font-size: 2rem;
     }
 }
+
+/* Custom maroon theme */
+.bg-maroon {
+  background-color: maroon !important;
+}
+
+.text-maroon {
+  color: maroon !important;
+}
+
+/* Optional: adjust carousel caption background for visibility */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
