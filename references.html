@@ -1,115 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>References | KDN Security Services</title>
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    nav.navbar {
+      background-color: #800000;
+    }
+    .navbar-brand img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    .nav-link,
+    .navbar-brand span {
+      color: #fff !important;
+    }
+    .nav-link.active {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    .references-hero {
+      background-color: #f8f9fa;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .references-container {
+      padding: 2rem 1rem;
+    }
+    .reference-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+    .reference-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    footer {
+      background-color: #800000;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <nav>
-    <div class="logo">
-      <img src="Images and Videos/Logo.png" alt="KDN Logo">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="Images and Videos/Logo.png" alt="KDN Logo" />
       <span>KDN Security Services</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavReferences" aria-controls="navbarNavReferences" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavReferences">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+        <li class="nav-item"><a class="nav-link" href="quotes.html">Quotes</a></li>
+        <li class="nav-item"><a class="nav-link active" href="references.html">References</a></li>
+      </ul>
     </div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="training.html">Training</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="feedback.html">Feedback</a></li>
-      <li><a href="quotes.html">Quotes</a></li>
-      <li><a href="references.html" class="active">References</a></li>
-    </ul>
-  </nav>
-</header>
+  </div>
+</nav>
 
 <!-- References Hero Section -->
 <section class="references-hero">
-  <h1>Our Clients and Projects</h1>
-  <p>Organizations that trust KDN Security Services.</p>
+  <div class="container">
+    <h1>Our Clients and Projects</h1>
+    <p>Organizations that trust KDN Security Services.</p>
+  </div>
 </section>
 
+<!-- References List -->
 <main>
-  <section class="references-container">
-    <h2>Key Clients and Projects</h2>
+  <section class="references-container container">
+    <h2 class="mb-4">Key Clients and Projects</h2>
     <div class="reference-cards">
 
       <div class="reference-card">
-        <h3>Marang J.S. School</h3>
+        <h5>Marang J.S. School</h5>
         <p>Alarm Monitoring Services (2021 - 2023)</p>
         <p><strong>Contact:</strong> Ms Keakile | +267 73598063</p>
       </div>
 
       <div class="reference-card">
-        <h3>CIPA (Francistown)</h3>
+        <h5>CIPA (Francistown)</h5>
         <p>Security Services (2021 - 2023)</p>
         <p><strong>Contact:</strong> Mr (Cell: 74164554)</p>
       </div>
 
       <div class="reference-card">
-        <h3>National Museum & Monument</h3>
+        <h5>National Museum & Monument</h5>
         <p>Security Services (2020 - 2022)</p>
         <p><strong>Contact:</strong> Mr Mbulawa | Tel: 3610458</p>
       </div>
+
       <div class="reference-card">
-        <h3>Attorney General Chamber</h3>
+        <h5>Attorney General Chamber</h5>
         <p>Alarm Monitoring (2019 - 2022)</p>
         <p><strong>Contact:</strong> Mr Chabaesile | 73174709</p>
       </div>
 
       <div class="reference-card">
-        <h3>Mahalapye DHMT</h3>
+        <h5>Mahalapye DHMT</h5>
         <p>Security Services (2020 - 2022)</p>
         <p><strong>Contact:</strong> Mr Mmereki | 74089840</p>
       </div>
 
       <div class="reference-card">
-        <h3>Ngwato Land Board</h3>
+        <h5>Ngwato Land Board</h5>
         <p>Security Services (2020 - 2022)</p>
         <p><strong>Contact:</strong> Mr Nnang | 76428568</p>
       </div>
 
       <div class="reference-card">
-        <h3>Maun (Accountant General)</h3>
+        <h5>Maun (Accountant General)</h5>
         <p>Security Services (2019 - 2022)</p>
         <p><strong>Contact:</strong> Ms Tsheko | 76435343</p>
       </div>
 
       <div class="reference-card">
-        <h3>Lotsane Senior School</h3>
+        <h5>Lotsane Senior School</h5>
         <p>Security Services, Alarm Monitoring, CCTV Installation (2018 - 2020)</p>
         <p><strong>Contact:</strong> Mr Tshebo | 71710787</p>
       </div>
 
       <div class="reference-card">
-        <h3>FOURS Cash & Carry</h3>
+        <h5>FOURS Cash & Carry</h5>
         <p>Security Services</p>
         <p><strong>Contact:</strong> Mr Manjula | Tel: 3930293</p>
       </div>
 
       <div class="reference-card">
-        <h3>Bond Risk Solution</h3>
+        <h5>Bond Risk Solution</h5>
         <p>Alarm Installation and CCTV (2015)</p>
         <p><strong>Contact:</strong> 73639978</p>
       </div>
 
       <div class="reference-card">
-        <h3>Trademost (Pty) Ltd</h3>
+        <h5>Trademost (Pty) Ltd</h5>
         <p>Security Services & Alarm Installation (2016 - 2017)</p>
         <p><strong>Contact:</strong> Mr Okgala | 73757222</p>
       </div>
+
     </div>
   </section>
 </main>
 
+<!-- Footer -->
 <footer>
   <p>&copy; 2025 KDN Security Services | All Rights Reserved</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
- 
