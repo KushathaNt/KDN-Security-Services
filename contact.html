@@ -4,148 +4,253 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us | KDN Security Services</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <style>
-    .navbar {
+    /* Navigation styles same as previous pages */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       background-color: #800000;
+      padding: 0.5rem 1rem;
     }
-    .navbar-nav .nav-link {
-      color: white;
+    nav .logo {
+      display: flex;
+      align-items: center;
     }
-    .navbar-nav .nav-link.active,
-    .navbar-nav .nav-link:hover {
-      text-decoration: underline;
-      color: #f8d7da;
-    }
-    .logo img {
+    nav .logo img {
       height: 40px;
     }
-    .logo span {
+    nav .logo span {
       color: white;
       font-weight: bold;
       margin-left: 10px;
+      font-size: 1.2rem;
+    }
+    nav ul.nav-links {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul.nav-links li {
+      margin-left: 1rem;
+    }
+    nav ul.nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.25rem 0.5rem;
+    }
+    nav ul.nav-links li a.active,
+    nav ul.nav-links li a:hover {
+      text-decoration: underline;
+      color: #f8d7da;
+    }
+
+    /* Contact Hero */
+    .contact-hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: #f8f9fa;
+    }
+
+    /* Container for Contact Info and Form side by side */
+    .contact-container {
+      display: flex;
+      flex-wrap: nowrap; /* prevent wrapping */
+      overflow-x: auto; /* allow horizontal scroll if too narrow */
+      gap: 2rem;
+      padding: 2rem 1rem;
+    }
+    .contact-info,
+    .contact-form {
+      flex: 0 0 50%; /* fixed 50% width */
+      box-sizing: border-box;
+    }
+
+    /* Make scroll bar look better on mobile */
+    .contact-container::-webkit-scrollbar {
+      height: 8px;
+    }
+    .contact-container::-webkit-scrollbar-thumb {
+      background-color: #800000;
+      border-radius: 4px;
+    }
+
+    /* Contact items styling */
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    .contact-item img {
+      margin-right: 1rem;
+      max-width: 80px;
+      height: auto;
+    }
+    .contact-item p {
+      margin: 0;
+      font-size: 1rem;
+    }
+    .contact-item a {
+      color: #800000;
+      text-decoration: none;
+    }
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact form inputs styling */
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-family: inherit;
+      resize: vertical;
+    }
+    form button {
+      background-color: #800000;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    form button:hover {
+      background-color: #5a0000;
+    }
+
+    /* Location section styling */
+    .location-section {
+      padding: 2rem 1rem;
+      background-color: #f8f9fa;
+    }
+    .location-info {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .location-info h3 {
+      margin-bottom: 0.5rem;
+    }
+    .map-embed iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      margin-top: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #f8f9fa;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    /* Responsive tweak: on wide screens keep side-by-side, on narrow (smaller than 600px) allow horizontal scroll but no wrapping */
+    @media (min-width: 600px) {
+      .contact-container {
+        justify-content: center;
+      }
     }
   </style>
 </head>
 <body>
 
-<!-- Bootstrap Navbar -->
 <header>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center logo" href="index.html">
-        <img src="Images and Videos/Logo.png" alt="KDN Logo" />
-        <span>KDN Security Services</span>
-      </a>
-      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
-          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
-          <li class="nav-item"><a class="nav-link" href="quotes.html">Quotes</a></li>
-          <li class="nav-item"><a class="nav-link" href="references.html">References</a></li>
-        </ul>
-      </div>
+  <nav>
+    <div class="logo">
+      <img src="Images and Videos/Logo.png" alt="KDN Logo" />
+      <span>KDN Security Services</span>
     </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="training.html">Training</a></li>
+      <li><a href="contact.html" class="active">Contact Us</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="quotes.html">Quotes</a></li>
+      <li><a href="references.html">References</a></li>
+    </ul>
   </nav>
 </header>
 
-<!-- Contact Hero Section -->
-<section class="contact-hero text-center p-5 bg-light">
+<section class="contact-hero">
   <h1>Get in Touch</h1>
   <p>We are ready to assist you 24/7. Let's stay connected!</p>
 </section>
 
-<main class="container my-5">
-  <section class="row contact-container">
-    <div class="col-md-6 contact-info">
+<main>
+  <section class="contact-container">
+    <div class="contact-info">
       <h2>Contact Information</h2>
 
-      <div class="contact-item my-3">
-        <img src="Images and Videos/location.png" width="100" alt="Location Icon" />
+      <div class="contact-item">
+        <img src="Images and Videos/location.png" alt="Location Icon" />
         <p><strong>Postal Address:</strong> P.O Box 50346, Gaborone, Botswana</p>
       </div>
 
-      <div class="contact-item my-3">
-        <img src="Images and Videos/phone.png" width="100" alt="Phone Icon" />
+      <div class="contact-item">
+        <img src="Images and Videos/phone.png" alt="Phone Icon" />
         <p><strong>Phone:</strong> +267 3969838 | 71 244 279 | 72 481 400 | 73 307 087</p>
       </div>
 
-      <div class="contact-item my-3">
-        <img src="Images and Videos/whatsapp.png" width="100" alt="WhatsApp Icon" />
+      <div class="contact-item">
+        <img src="Images and Videos/whatsapp.png" alt="WhatsApp Icon" />
         <p><strong>WhatsApp:</strong> <a href="https://wa.me/26774406106" target="_blank">+267 74406106</a></p>
       </div>
 
-      <div class="contact-item my-3">
-        <img src="Images and Videos/email.png" width="100" alt="Email Icon" />
+      <div class="contact-item">
+        <img src="Images and Videos/email.png" alt="Email Icon" />
         <p><strong>Email:</strong> <a href="mailto:kdnsocialmedia@gmail.com">kdnsocialmedia@gmail.com</a></p>
       </div>
 
-      <div class="contact-item my-3">
-        <img src="Images and Videos/facebook.png" width="200" alt="Facebook Icon" />
+      <div class="contact-item">
+        <img src="Images and Videos/facebook.png" alt="Facebook Icon" style="max-width:150px;" />
         <p><strong>Facebook:</strong> <a href="https://www.facebook.com/share/1685aJXkBS/?mibextid=wwXIfr" target="_blank">KDN Security Services</a></p>
       </div>
 
-      <div class="contact-item my-3">
-        <img src="Images and Videos/clock.png" width="100" alt="Clock Icon" />
+      <div class="contact-item">
+        <img src="Images and Videos/clock.png" alt="Clock Icon" />
         <p><strong>Working Hours:</strong> 24/7, Every Day</p>
       </div>
     </div>
 
-    <div class="col-md-6 contact-form">
+    <div class="contact-form">
       <h2>Send Us a Message</h2>
       <form action="https://formspree.io/f/manopnaj" method="POST">
-        <input type="hidden" name="_subject" value="New Contact Form Submission">
-        <div class="mb-3">
-          <input class="form-control" type="text" name="name" placeholder="Your Full Name" required>
-        </div>
-        <div class="mb-3">
-          <input class="form-control" type="email" name="email" placeholder="Your Email Address" required>
-        </div>
-        <div class="mb-3">
-          <input class="form-control" type="text" name="subject" placeholder="Subject" required>
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control" name="message" rows="6" placeholder="Your Message" required></textarea>
-        </div>
-        <button class="btn btn-primary" type="submit">Send Message</button>
-        <input type="hidden" name="_next" value="https://yourwebsite.com/submitted.html">
+        <input type="hidden" name="_subject" value="New Contact Form Submission" />
+        <input type="text" name="name" placeholder="Your Full Name" required />
+        <input type="email" name="email" placeholder="Your Email Address" required />
+        <input type="text" name="subject" placeholder="Subject" required />
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+        <input type="hidden" name="_next" value="https://yourwebsite.com/submitted.html" />
       </form>
     </div>
   </section>
 </main>
 
-<!-- Branch Location Section with Map -->
-<section class="location-section container mb-5">
-  <h2 class="text-center mb-4">Our Main Location</h2>
-  <div class="location-container">
-    <div class="location-info text-center">
-      <h3>KDN Security Services HQ</h3>
-      <p><strong>Address:</strong><br>
-        Plot 644 Kopong Gakhudunyane<br>
-        Gaborone, Botswana
-      </p>
-      <div class="map-embed my-4">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.2418352503923!2d25.888046274524182!3d-24.477076278181528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebb47d4dbc6bde9%3A0x26d02eade89652dc!2sKDN%20SECURITY!5e0!3m2!1sen!2sbw!4v1747046606801!5m2!1sen!2sbw" 
-          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="text-center py-4 bg-light">
-  <p>&copy; 2025 KDN Security Services | All Rights Reserved</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<section class="location-section">
+  <h2>Our Main Location</h2>
+  <div class="location-info">
+    <h3>KDN Security Services HQ</h3>
+    <p>
+      <strong>Address:</strong><br />
+      Plot 644 Kopong Gakhudunyane<br />
+      Gaborone, Botswana
+    </p>
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.2418352503923!2d25.888046274524182!3d-24.477076278181528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebb47d4dbc6bde9%3A0x26d02eade89652dc!2sKDN%20SECURITY!5e0!3m2!1sen!2sbw!4v1747046606801!5m2!1sen!2sbw
