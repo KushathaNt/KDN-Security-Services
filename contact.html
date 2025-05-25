@@ -6,80 +6,79 @@
   <title>Contact Us | KDN Security Services</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    /* === Navigation from your services.html === */
+    /* === Your exact services.html nav styles === */
     nav {
       background-color: #800000;
+      padding: 0.5rem 1rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0.5rem 1rem;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
     nav .logo {
       display: flex;
       align-items: center;
+      gap: 10px;
     }
     nav .logo img {
       height: 40px;
     }
     nav .logo span {
       color: white;
-      font-weight: bold;
-      margin-left: 10px;
-      font-size: 1.2rem;
+      font-weight: 700;
+      font-size: 1.3rem;
+      user-select: none;
     }
-    nav ul.nav-links {
-      list-style: none;
+    nav ul {
       display: flex;
+      list-style: none;
       margin: 0;
       padding: 0;
       gap: 1rem;
-      flex-wrap: wrap;
     }
-    nav ul.nav-links li {
-      margin: 0;
-    }
-    nav ul.nav-links li a {
+    nav ul li a {
       color: white;
       text-decoration: none;
-      font-weight: 500;
+      font-weight: 600;
       padding: 0.25rem 0.5rem;
+      transition: color 0.3s ease;
     }
-    nav ul.nav-links li a.active,
-    nav ul.nav-links li a:hover {
+    nav ul li a:hover,
+    nav ul li a.active {
       color: #f8d7da;
       text-decoration: underline;
     }
 
-    /* Contact Hero */
+    /* Contact hero */
     .contact-hero {
       text-align: center;
       padding: 3rem 1rem;
       background-color: #f8f9fa;
     }
 
-    /* Make contact-container a flexbox row, side-by-side, no wrap */
+    /* Contact container: flex row, no wrap, horizontal scroll if needed */
     .contact-container {
       display: flex;
       flex-wrap: nowrap;
-      padding: 2rem 1rem;
       gap: 2rem;
+      padding: 2rem 1rem;
       overflow-x: auto; /* horizontal scroll if needed */
+      -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
     }
 
-    /* Force fixed 50% width each */
+    /* Each box 50% width min 320px so on phones it scrolls horizontally */
     .contact-info,
     .contact-form {
       flex: 0 0 50%;
+      min-width: 320px;
       box-sizing: border-box;
-      min-width: 280px; /* avoid too narrow */
-      background: #fff;
-      padding: 1rem;
-      border-radius: 6px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
-    /* Contact items styling */
+    /* Contact items */
     .contact-item {
       display: flex;
       align-items: center;
@@ -102,7 +101,7 @@
       text-decoration: underline;
     }
 
-    /* Contact form inputs styling */
+    /* Form inputs */
     form input[type="text"],
     form input[type="email"],
     form textarea {
@@ -130,7 +129,7 @@
       background-color: #5a0000;
     }
 
-    /* Location section styling */
+    /* Location section */
     .location-section {
       padding: 2rem 1rem;
       background-color: #f8f9fa;
@@ -162,14 +161,13 @@
   </style>
 </head>
 <body>
-
 <header>
   <nav>
     <div class="logo">
       <img src="Images and Videos/Logo.png" alt="KDN Logo" />
       <span>KDN Security Services</span>
     </div>
-    <ul class="nav-links">
+    <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="services.html">Services</a></li>
@@ -261,6 +259,5 @@
 <footer>
   <p>&copy; 2025 KDN Security Services | All Rights Reserved</p>
 </footer>
-
 </body>
-</html
+</html>
