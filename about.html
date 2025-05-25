@@ -6,116 +6,172 @@
   <title>About Us | KDN Security Services</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <style>
-    .card-text {
+    .section-title {
+      margin-top: 40px;
+      text-align: center;
+      font-weight: bold;
+      color: #800000;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      height: 100%;
+    }
+
+    .card small {
       font-size: 0.9rem;
     }
-    .objectives .card,
-    .core-values .card {
-      min-height: 100%;
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    nav {
+      background-color: #800000;
+      padding: 10px 20px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    .nav-links li {
+      margin-right: 15px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav-links a.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #800000;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="Images and Videos/Logo.png" alt="KDN Logo" width="40" height="40" class="me-2">
-      <span>KDN Security Services</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
-        <li class="nav-item"><a class="nav-link" href="quotes.html">Quotes</a></li>
-        <li class="nav-item"><a class="nav-link" href="references.html">References</a></li>
-      </ul>
+  <nav class="d-flex justify-content-between align-items-center flex-wrap">
+    <div class="logo">
+      <img src="Images and Videos/Logo.png" alt="KDN Logo" />
+      <span class="text-white fw-bold">KDN Security Services</span>
     </div>
+    <ul class="nav-links d-flex flex-wrap">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="training.html">Training</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="quotes.html">Quotes</a></li>
+      <li><a href="references.html">References</a></li>
+    </ul>
   </nav>
 </header>
 
-<main class="py-5 bg-light">
-  <div class="container">
-    <h1 class="text-center mb-4">About Us</h1>
-    <p class="lead text-center">
-      KDN Security Services is dedicated to providing top-tier protection through advanced training, state-of-the-art equipment, and a commitment to excellence.
-    </p>
-  </div>
+<main class="container my-5">
+
+  <h1 class="text-center text-uppercase fw-bold mb-4" style="color: #800000;">About Us</h1>
+  <p class="text-center">KDN Security Services is dedicated to providing top-notch protection services, ensuring safety and peace of mind for all our clients.</p>
 
   <!-- Objectives Section -->
-  <section class="objectives py-5 bg-white">
-    <div class="container">
-      <h2 class="text-center mb-4">Objectives</h2>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 text-center">
-        <div class="col">
-          <div class="card shadow-sm p-3">
-            <div class="text-primary fs-1 mb-2"><i class="fas fa-user-shield"></i></div>
-            <h5 class="card-title">Training Excellence</h5>
-            <p class="card-text text-wrap">To ensure all our security guards are adequately trained before deployment for optimal performance.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm p-3">
-            <div class="text-primary fs-1 mb-2"><i class="fas fa-headset"></i></div>
-            <h5 class="card-title">Customer Support</h5>
-            <p class="card-text text-wrap">To maintain high levels of customer service and response efficiency 24/7.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm p-3">
-            <div class="text-primary fs-1 mb-2"><i class="fas fa-chart-line"></i></div>
-            <h5 class="card-title">Growth & Innovation</h5>
-            <p class="card-text text-wrap">To continuously improve our operations through innovation and feedback-based learning.</p>
-          </div>
-        </div>
+  <h2 class="section-title">Objectives</h2>
+  <div class="row">
+    <div class="col-md-4 col-6">
+      <div class="card text-center">
+        <small>Provide reliable and professional security services at all times.</small>
       </div>
     </div>
-  </section>
+    <div class="col-md-4 col-6">
+      <div class="card text-center">
+        <small>Promote a culture of integrity, discipline, and vigilance.</small>
+      </div>
+    </div>
+    <div class="col-md-4 col-6">
+      <div class="card text-center">
+        <small>Support and empower communities through safety initiatives.</small>
+      </div>
+    </div>
+    <div class="col-md-4 col-6">
+      <div class="card text-center">
+        <small>Ensure constant training and development of security personnel.</small>
+      </div>
+    </div>
+    <div class="col-md-4 col-6">
+      <div class="card text-center">
+        <small>Adapt quickly to emerging threats and security technologies.</small>
+      </div>
+    </div>
+    <div class="col-md-4 col-6">
+      <div class="card text-center">
+        <small>Offer client-centered solutions tailored to unique protection needs.</small>
+      </div>
+    </div>
+  </div>
 
   <!-- Core Values Section -->
-  <section class="core-values py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">Core Values</h2>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 text-center">
-        <div class="col">
-          <div class="card shadow-sm p-3">
-            <div class="text-success fs-1 mb-2"><i class="fas fa-check-circle"></i></div>
-            <h5 class="card-title">Integrity</h5>
-            <p class="card-text text-wrap">We uphold the highest standards of honesty and strong moral principles in all operations.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm p-3">
-            <div class="text-success fs-1 mb-2"><i class="fas fa-users"></i></div>
-            <h5 class="card-title">Teamwork</h5>
-            <p class="card-text text-wrap">We believe in collaboration and mutual support to achieve our goals and deliver excellent service.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm p-3">
-            <div class="text-success fs-1 mb-2"><i class="fas fa-shield-alt"></i></div>
-            <h5 class="card-title">Accountability</h5>
-            <p class="card-text text-wrap">We take full responsibility for our actions, commitments, and the trust clients place in us.</p>
-          </div>
-        </div>
+  <h2 class="section-title">Core Values</h2>
+  <div class="row">
+    <div class="col-md-4 col-6">
+      <div class="card text-center">
+        <small>Integrity</small>
       </div>
     </div>
-  </section>
+    <div class="col-md-4 col-6">
+      <div class="card text-center">
+        <small>Discipline</small>
+      </div>
+    </div>
+    <div class="col-md-4 col-6">
+      <div class="card text-center">
+        <small>Professionalism</small>
+      </div>
+    </div>
+    <div class="col-md-4 col-6">
+      <div class="card text-center">
+        <small>Respect</small>
+      </div>
+    </div>
+    <div class="col-md-4 col-6">
+      <div class="card text-center">
+        <small>Responsiveness</small>
+      </div>
+    </div>
+    <div class="col-md-4 col-6">
+      <div class="card text-center">
+        <small>Teamwork</small>
+      </div>
+    </div>
+  </div>
+
 </main>
 
-<footer class="bg-dark text-white text-center py-3">
-  <p class="mb-0">&copy; 2025 KDN Security Services | All Rights Reserved</p>
+<footer>
+  <p>&copy; 2025 KDN Security Services | All Rights Reserved</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
