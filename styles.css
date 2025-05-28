@@ -1996,3 +1996,15 @@ header {
     }
 }
 
+#qr-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#qr-section img {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+
